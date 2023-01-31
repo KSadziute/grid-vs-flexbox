@@ -1,0 +1,73 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    height: 300px;
+    margin: 30px;
+
+}
+
+.gi1{
+    grid-row: span 2;
+    grid-column: span 2;
+    background: salmon;
+}
+
+.gi2{
+    grid-row: 1/2;
+    grid-column: 3/5;
+    background: salmon;   
+}
+
+.gi3{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    background: salmon;
+}
+
+.gi4{
+    grid-row: 2/3;
+    grid-column: 4/5;
+    background: salmon;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 30px;
+}
+
+.flex-container>*{
+    flex: 1;
+    height: 300px;
+    
+}
+ .flex-container .main{
+    background: teal;
+ }
+
+ .flex-container .side1{
+    background: teal;
+    height: 50%;
+    /* display: flex; */
+    /* gap: 30px; */
+    
+ }
+
+ .flex-container .side2{
+    display: flex;
+    justify-content: space-between;
+    background: teal;
+    height: 50%;
+    gap: 30px;
+ }
+
+ .flex-container .side{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+ }
+
